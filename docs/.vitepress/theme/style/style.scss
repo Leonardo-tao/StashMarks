@@ -1,0 +1,18 @@
+:root {
+  /* 标题 */
+  --vp-home-hero-name-color: transparent;
+  /* 渐变色 */
+  --vp-home-hero-name-background: linear-gradient(135deg, #76c4fd 100%, #bbe2fe 100%);
+
+  /* 图标背景 */
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgb(226, 163, 255), rgb(118, 179, 255));
+  --vp-home-hero-image-filter: blur(150px);
+  
+  /* 提示框背景颜色 */
+  --vp-custom-block-tip-bg: var(--vp-c-green-soft);
+}
+
+.VPImage.image-src {
+  max-width: 256px;
+  max-height: 256px;
+}
