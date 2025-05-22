@@ -1,12 +1,5 @@
 import { defineConfig } from "vitepress";
-import { vitepressDemoPlugin } from 'vitepress-demo-plugin'; 
-
-import { loadEnv } from "vite";
-const mode = process.env.NODE_ENV || "development";
-const { VITE_BASE_URL } = loadEnv(mode, process.cwd());
-
-console.log("Mode:", process.env.NODE_ENV);
-console.log("VITE_BASE_URL:", VITE_BASE_URL);
+import { vitepressDemoPlugin } from 'vitepress-demo-plugin';
 
 export const sharedConfig = defineConfig({
   rewrites: {
@@ -18,7 +11,7 @@ export const sharedConfig = defineConfig({
   titleTemplate: "Hi，终于等到你",
   description: "xxx、xxx",
   head: [["link", { rel: "icon", href: "/StashMark/favicon.svg" }]],
-  base: VITE_BASE_URL,
+  base: '/docs/',
   lastUpdated: true,
   vite: {
     build: {
@@ -31,8 +24,8 @@ export const sharedConfig = defineConfig({
   },
   markdown: {
     // markdown 配置
-    config(md) { 
-      md.use(vitepressDemoPlugin); 
+    config(md) {
+      md.use(vitepressDemoPlugin);
     },
     math: true,
     lineNumbers: true, // 行号显示
