@@ -7,7 +7,7 @@ export const sharedConfig = defineConfig({
   },
   metaChunk: true,
   lang: "en",
-  title: "StashMark",
+  title: "StashMarks",
   titleTemplate: "Hi，终于等到你",
   description: "xxx、xxx",
   head: [["link", { rel: "icon", href: "/StashMark/favicon.svg" }]],
