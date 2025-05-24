@@ -5,12 +5,12 @@ lang: en
 titleTemplate: Hi，终于等到你
 
 hero:
-  name: "StashMark"
+  name: "StashMarks"
   text: "Build your own navigation site"
   tagline: Bookmarks to Beautiful Site in Minutes
   image:
     src: /logo.svg
-    alt: StashMark Logo
+    alt: StashMarks Logo
   actions:
     - theme: brand
       text: Guide

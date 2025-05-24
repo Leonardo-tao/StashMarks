@@ -5,12 +5,12 @@ lang: zh-CN
 titleTemplate: Hi，终于等到你
 
 hero:
-  name: "StashMark"
+  name: "StashMarks"
   text: "创建属于你自己的导航网站"
   tagline: "将 Bookmarks 变成精美的导航，只需几分钟"
   image:
     src: /logo.svg
-    alt: StashMark Logo
+    alt: StashMarks Logo
   actions:
     - theme: brand
       text: 入门指南
