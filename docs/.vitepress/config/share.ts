@@ -3,14 +3,14 @@ import { vitepressDemoPlugin } from 'vitepress-demo-plugin';
 
 export const sharedConfig = defineConfig({
   rewrites: {
-    "en/:rest*": ":rest*",
+    'en/:rest*': ':rest*',
   },
   metaChunk: true,
-  lang: "en",
-  title: "StashMarks",
-  titleTemplate: "Hi，终于等到你",
-  description: "xxx、xxx",
-  head: [["link", { rel: "icon", href: "/StashMark/favicon.svg" }]],
+  lang: 'en',
+  title: 'StashMarks',
+  titleTemplate: 'Hi，终于等到你',
+  description: 'xxx、xxx',
+  head: [['link', { rel: 'icon', href: '/docs/favicon.ico' }]],
   base: '/StashMark/docs/',
   lastUpdated: true,
   vite: {
@@ -25,7 +25,7 @@ export const sharedConfig = defineConfig({
   markdown: {
     // markdown 配置
     config(md) {
-      md.use(vitepressDemoPlugin);
+      md.use(vitepressDemoPlugin)
     },
     math: true,
     lineNumbers: true, // 行号显示
@@ -37,28 +37,28 @@ export const sharedConfig = defineConfig({
   themeConfig: {
     // 主题设置
     search: {
-      provider: "local",
+      provider: 'local',
       options: {
         locales: {
           root: {
             translations: {
               button: {
-                buttonText: "Search",
-                buttonAriaLabel: "Search",
+                buttonText: 'Search',
+                buttonAriaLabel: 'Search',
               },
               modal: {
-                displayDetails: "Display detailed list",
-                resetButtonTitle: "Reset search",
-                backButtonTitle: "Close search",
-                noResultsText: "No results for",
+                displayDetails: 'Display detailed list',
+                resetButtonTitle: 'Reset search',
+                backButtonTitle: 'Close search',
+                noResultsText: 'No results for',
                 footer: {
-                  selectText: "to select",
-                  selectKeyAriaLabel: "enter",
-                  navigateText: "to navigate",
-                  navigateUpKeyAriaLabel: "up arrow",
-                  navigateDownKeyAriaLabel: "down arrow",
-                  closeText: "to close",
-                  closeKeyAriaLabel: "escape",
+                  selectText: 'to select',
+                  selectKeyAriaLabel: 'enter',
+                  navigateText: 'to navigate',
+                  navigateUpKeyAriaLabel: 'up arrow',
+                  navigateDownKeyAriaLabel: 'down arrow',
+                  closeText: 'to close',
+                  closeKeyAriaLabel: 'escape',
                 },
               },
             },
@@ -66,6 +66,6 @@ export const sharedConfig = defineConfig({
         },
       },
     },
-    logo: "/logo.svg",
+    logo: '/StashMarks/docs/logo.svg',
   },
-});
+})
