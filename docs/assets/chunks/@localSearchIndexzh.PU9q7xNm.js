@@ -1,1 +1,0 @@
-const t='{"documentCount":1,"nextId":1,"documentIds":{"0":"/StashMarks/docs/zh/quick-started/#快速入门"},"fieldIds":{"title":0,"titles":1,"text":2},"fieldLength":{"0":[1,1,2]},"averageFieldLength":[1,1,2],"storedFields":{"0":{"title":"快速入门","titles":[]}},"dirtCount":0,"index":[["中文快速入门指南内容在此填写",{"2":{"0":1}}],["快速入门",{"0":{"0":1}}]],"serializationVersion":2}';export{t as default};
